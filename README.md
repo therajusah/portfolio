@@ -8,7 +8,7 @@ This Portfolio website project uses React, CSS, Locomotive for smooth scrolling 
 1. Clone the Project
 
 ```
-    git clone https://github.com/therajusah/LMS-Platform.git
+    git clone https://github.com/therajusah/Portfolio.git
 ```
 
 2. Install dependencies
