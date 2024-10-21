@@ -7,7 +7,7 @@ import ecomImg from "../assets/ecom-i.png";
 import paydude from "../assets/paydude.png";
 import technest from "../assets/Technest.jpg";
 import { FloatingNav } from "./FloatingNav";
-import { HeroParallax } from "../components/HeroParallax";
+import { Header, HeroParallax } from "../components/HeroParallax";
 
 import {
   RiLinkedinFill,
@@ -136,6 +136,7 @@ const App = () => {
 
         {/* Projects Section */}
         <div id="projects">
+      
           <div>
             <div className="mb-8 text-4xl font-bold text-center text-white">
               <h2>My Projects</h2>

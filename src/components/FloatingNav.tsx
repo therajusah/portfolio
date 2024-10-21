@@ -62,11 +62,3 @@ export const FloatingNav = ({
     </AnimatePresence>
   );
 };
-
-
-//  
-{/* <div> <div className="mb-4 font-bold text-center text-white">
-<h2>My Projects</h2>
-</div>
-<HeroParallax products={productItems} />
-</div> */}

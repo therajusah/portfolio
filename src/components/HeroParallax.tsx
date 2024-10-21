@@ -103,14 +103,13 @@ export const HeroParallax = ({
 export const Header = () => {
   return (
     <div className="relative top-0 left-0 w-full px-4 py-20 mx-auto max-w-7xl md:py-40">
-      <h1 className="text-2xl font-bold md:text-7xl dark:text-white">
-        The Ultimate <br /> development studio
+      <h1 className="text-2xl font-bold text-white md:text-7xl dark:text-white">
+        My Personal Development Projects
       </h1>
-      <p className="max-w-2xl mt-8 text-base md:text-xl dark:text-neutral-200">
-        We build beautiful products with the latest technologies and frameworks.
-        We are a team of passionate developers and designers that love to build
-        amazing products.
+      <p className="max-w-2xl mt-8 text-base text-white md:text-xl dark:text-neutral-200">
+        As a solo developer, I create dynamic web and mobile applications using the MERN stack, TypeScript, Next.js, and React Native. My passion lies in building intuitive, high-quality products that deliver exceptional user experiences.
       </p>
+
     </div>
   );
 };
@@ -128,6 +127,7 @@ export const ProductCard = ({
 }) => {
   return (
     <motion.div
+
       style={{
         x: translate,
       }}
@@ -149,10 +149,12 @@ export const ProductCard = ({
           alt={product.title}
         />
       </a>
+
       <div className="absolute inset-0 w-full h-full bg-black opacity-0 pointer-events-none group-hover/product:opacity-80"></div>
       <h2 className="absolute text-white opacity-0 bottom-4 left-4 group-hover/product:opacity-100">
         {product.title}
       </h2>
+
     </motion.div>
   );
 };
