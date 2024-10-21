@@ -90,7 +90,7 @@ const App = () => {
                 <h3 className="text-3xl text-white md:text-5xl">Hey,</h3>
                 <h3 className="text-3xl text-white md:text-5xl">I am Raju Kumar</h3>
                 <p className="mt-2 text-2xl text-white md:text-2xl sm:mt-2">
-                  A Frontend developer
+                  A FullStack developer
                 </p>
                 <a
                   href="https://www.linkedin.com/in/therajusah"
