@@ -7,7 +7,7 @@ import ecomImg from "../assets/ecom-i.png";
 import paydude from "../assets/paydude.png";
 import technest from "../assets/Technest.jpg";
 import { FloatingNav } from "./FloatingNav";
-import { Header, HeroParallax } from "../components/HeroParallax";
+import { HeroParallax } from "../components/HeroParallax";
 
 import {
   RiLinkedinFill,
@@ -47,7 +47,85 @@ const App = () => {
       link: "https://technest.netlify.app/",
       thumbnail: technest,
     },
-  ];
+    // copied multiple times 
+    {
+      title: "Ecommerce Store",
+      link: "https://ecom-fakestore.vercel.app/",
+      thumbnail: ecomImg,
+    },
+    {
+      title: "PayDude",
+      link: "https://paydude.netlify.app/",
+      thumbnail: paydude,
+    },
+    {
+      title: "TechNest",
+      link: "https://technest.netlify.app/",
+      thumbnail: technest,
+    },//
+    {
+      title: "Ecommerce Store",
+      link: "https://ecom-fakestore.vercel.app/",
+      thumbnail: ecomImg,
+    },
+    {
+      title: "PayDude",
+      link: "https://paydude.netlify.app/",
+      thumbnail: paydude,
+    },
+    {
+      title: "TechNest",
+      link: "https://technest.netlify.app/",
+      thumbnail: technest,
+    },//
+    {
+      title: "Ecommerce Store",
+      link: "https://ecom-fakestore.vercel.app/",
+      thumbnail: ecomImg,
+    },
+    {
+      title: "PayDude",
+      link: "https://paydude.netlify.app/",
+      thumbnail: paydude,
+    },
+    {
+      title: "TechNest",
+      link: "https://technest.netlify.app/",
+      thumbnail: technest,
+    },//
+    {
+      title: "Ecommerce Store",
+      link: "https://ecom-fakestore.vercel.app/",
+      thumbnail: ecomImg,
+    },
+    {
+      title: "PayDude",
+      link: "https://paydude.netlify.app/",
+      thumbnail: paydude,
+    },
+    {
+      title: "TechNest",
+      link: "https://technest.netlify.app/",
+      thumbnail: technest,
+    },
+    //
+    {
+      title: "Ecommerce Store",
+      link: "https://ecom-fakestore.vercel.app/",
+      thumbnail: ecomImg,
+    },
+    {
+      title: "PayDude",
+      link: "https://paydude.netlify.app/",
+      thumbnail: paydude,
+    },
+    {
+      title: "TechNest",
+      link: "https://technest.netlify.app/",
+      thumbnail: technest,
+    },
+     
+    ];
 
   const navItems = [
     { name: "Home", link: "#home" },
@@ -147,8 +225,8 @@ const App = () => {
 
         </div>
       </div>
-      <div className="bg-black page-5">
-        <div className="container mx-auto text-center">
+
+        <div className="container mx-auto text-center top-10">
           <h2 className="mb-4 text-4xl font-bold text-white" id="contact">Contact</h2>
           <div className="text-2xl text-white">
             <p className="mb-5">Feel free to reach out to me via:</p>
@@ -189,7 +267,6 @@ const App = () => {
               </a>
 
             </div>
-          </div>
         </div>
       </div>
     </div>
