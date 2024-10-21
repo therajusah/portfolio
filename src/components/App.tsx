@@ -9,7 +9,6 @@ import technest from "../assets/Technest.jpg";
 import { FloatingNav } from "./FloatingNav";
 import { HeroParallax } from "../components/HeroParallax";
 
-// Import your skill and footer icons
 import {
   RiLinkedinFill,
   RiTwitterFill,
@@ -33,11 +32,6 @@ const App = () => {
   const textDivRef = useRef(null);
 
   const productItems = [
-    {
-      title: "Product 1",
-      link: "#product1",
-      thumbnail: myImage,
-    },
     {
       title: "Ecommerce Store",
       link: "https://ecom-fakestore.vercel.app/",
@@ -65,7 +59,7 @@ const App = () => {
   return (
     <div className="bg-black">
       <div ref={scrollRef} data-scroll-container>
-        <div className="min-h-screen bg-black">
+        <div className="min-h-screen bg-black" id="home">
           <div className="container px-6 mx-auto md:px-10">
             <FloatingNav navItems={navItems} />
           </div>
@@ -124,7 +118,7 @@ const App = () => {
         </div>
 
         {/* Languages & Frameworks Section */}
-        <div className="page-3 h-[30vh] w-[100%] mb-10 bg-black flex flex-col justify-center items-center">
+        <div id="skills" className="page-3 h-[30vh] w-[100%] mb-10 bg-black flex flex-col justify-center items-center">
           <h2 className="mb-8 text-4xl font-bold text-white">
             Languages & Frameworks
           </h2>
@@ -141,9 +135,9 @@ const App = () => {
         </div>
 
         {/* Projects Section */}
-        <div>
+        <div id="projects">
           <div>
-            <div className="mb-4 font-bold text-center text-white">
+            <div className="mb-8 text-4xl font-bold text-center text-white">
               <h2>My Projects</h2>
             </div>
             <HeroParallax products={productItems} />
@@ -152,9 +146,9 @@ const App = () => {
 
         </div>
       </div>
-      <div className="bg-black page-5 h-[30vh]">
+      <div className="bg-black page-5">
         <div className="container mx-auto text-center">
-          <h2 className="mb-4 text-4xl font-bold text-white">Contact</h2>
+          <h2 className="mb-4 text-4xl font-bold text-white" id="contact">Contact</h2>
           <div className="text-2xl text-white">
             <p className="mb-5">Feel free to reach out to me via:</p>
             <div className="flex justify-center space-x-6">
