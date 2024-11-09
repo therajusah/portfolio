@@ -3,12 +3,17 @@
 @tailwind components;
 @tailwind utilities;
 
-
-.icon.html { color: #e34c26; } /* HTML */
-.icon.css { color: #264de4; } /* CSS */
-.icon.javascript { color: #f7df1e; } /* JavaScript */
-.icon.react { color: #61dafb; } /* React */
-.icon.typescript { color: #3178c6; } /* TypeScript */
-.icon.tailwind { color: #38b2ac; } /* Tailwind CSS */
-.icon.mongodb { color: #4db33d; } /* MongoDB */
-.icon.git { color: #f05032; } /* Git */
+/* ICON COLORS */
+.icon.html { color: #e34c26; }         
+.icon.css { color: #264de4; }       
+.icon.javascript { color: #f7df1e; }  
+.icon.react { color: #61dafb; }       
+.icon.typescript { color: #3178c6; }   
+.icon.tailwind { color: #38b2ac; }     
+.icon.mongodb { color: #4db33d; }     
+.icon.git { color: #f05032; }         
+.icon.docker { color: #2496ed; }       
+.icon.nextjs { color: #000000; }       
+.icon.aws { color: #ff9900; }          
+.icon.postgresql { color: #336791; }   
+.icon.reactnative { color: #61dafb; }  

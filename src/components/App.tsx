@@ -25,7 +25,13 @@ import {
   SiTailwindcss,
   SiMongodb,
   SiGit,
+  SiDocker,
+  SiNextdotjs,
+  SiPostgresql,
+  SiAwslambda
 } from "react-icons/si";
+
+import Contact from "./Contact";
 
 const App = () => {
   const scrollRef = useRef(null);
@@ -47,7 +53,7 @@ const App = () => {
       link: "https://technest.netlify.app/",
       thumbnail: technest,
     },
-    // copied multiple times 
+    // COPIED MULTIPLE TIMES
     {
       title: "Ecommerce Store",
       link: "https://ecom-fakestore.vercel.app/",
@@ -124,8 +130,8 @@ const App = () => {
       link: "https://technest.netlify.app/",
       thumbnail: technest,
     },
-     
-    ];
+
+  ];
 
   const navItems = [
     { name: "Home", link: "#home" },
@@ -135,9 +141,9 @@ const App = () => {
   ];
 
   return (
-    <div className="bg-black">
+    <div className="bg-white dark:bg-black text-black dark:text-white">
       <div ref={scrollRef} data-scroll-container>
-        <div className="min-h-screen bg-black" id="home">
+        <div className="min-h-screen" id="home">
           <div className="container px-6 mx-auto md:px-10">
             <FloatingNav navItems={navItems} />
           </div>
@@ -159,14 +165,12 @@ const App = () => {
                 />
               </div>
               <div className="px-4 mt-8 md:w-1/2 md:px-10 md:mt-0" ref={textDivRef}>
-                <h3 className="text-3xl text-white md:text-5xl">Hey,</h3>
-                <h3 className="text-3xl text-white md:text-5xl">I am Raju Kumar</h3>
-                <p className="mt-2 text-2xl text-white md:text-2xl sm:mt-2">
-                  A FullStack developer
-                </p>
+                <h3 className="text-3xl md:text-5xl">Hey,</h3>
+                <h3 className="text-3xl md:text-5xl">I am Raju Kumar</h3>
+                <p className="mt-2 text-2xl">A FullStack developer</p>
                 <a
                   href="https://www.linkedin.com/in/therajusah"
-                  className="inline-block mt-2 text-xl text-white border-b border-white"
+                  className="inline-block mt-2 text-xl py-2 px-6 bg-gray-200 dark:bg-gray-800 font-semibold rounded-full shadow-md hover:bg-gray-300 dark:hover:bg-gray-700 focus:outline-none"
                 >
                   Get In Touch!
                 </a>
@@ -174,33 +178,20 @@ const App = () => {
             </div>
           </div>
         </div>
-
-        {/* About Me Section */}
-        <div className="bg-black page-2">
-          <div className="container py-8 mx-auto">
-            <div className="text-center">
-              <div className="mb-8 text-4xl font-medium text-white">About me</div>
-              <div className="text-2xl text-white">
-                <p className="mb-5 text-2xl font-medium sm:text-1xl">
-                  I am a MERN stack developer skilled in Tailwind CSS and
-                  TypeScript, with hands-on experience across various projects.
-                  I'm eager to connect and collaborate on exciting projects that
-                  can make a meaningful impact.
-                </p>
-                <p className="mb-5 text-2xl font-medium">
-                  Let's craft something remarkable together.
-                </p>
-              </div>
-            </div>
+        {/* ABOUT ME */}
+        <div className="py-8" id="about">
+          <div className="container text-center mx-auto">
+            <h2 className="mb-8 text-4xl font-medium">About me</h2>
+            <p className="text-2xl">
+              I am a MERN stack developer skilled in Tailwind CSS and TypeScript, with hands-on experience across various projects.
+              I'm eager to connect and collaborate on exciting projects that can make a meaningful impact. Let's craft something remarkable together.
+            </p>
           </div>
         </div>
-
-        {/* Languages & Frameworks Section */}
-        <div id="skills" className="page-3 h-[30vh] w-[100%] mb-10 bg-black flex flex-col justify-center items-center">
-          <h2 className="mb-8 text-4xl font-bold text-white">
-            Languages & Frameworks
-          </h2>
-          <div className="flex flex-wrap items-center justify-center space-x-6">
+        {/* LANGUAGES AND FRAMEWORK*/}
+        <div id="skills" className="flex flex-col items-center justify-center py-10">
+          <h2 className="mb-8 text-4xl font-bold">Languages & Frameworks</h2>
+          <div className="flex flex-wrap justify-center space-x-6">
             <SiHtml5 className="text-3xl md:text-6xl icon html" />
             <SiCss3 className="text-3xl md:text-6xl icon css" />
             <SiJavascript className="text-3xl md:text-6xl icon javascript" />
@@ -209,65 +200,22 @@ const App = () => {
             <SiTailwindcss className="text-3xl md:text-6xl icon tailwind" />
             <SiMongodb className="text-3xl md:text-6xl icon mongodb" />
             <SiGit className="text-3xl md:text-6xl icon git" />
+            <SiDocker className="text-3xl md:text-6xl icon docker" />
+            <SiNextdotjs className="text-3xl md:text-6xl icon nextjs" />
+            <SiAwslambda className="text-3xl md:text-6xl icon aws" />
+            <SiPostgresql className="text-3xl md:text-6xl icon postgresql" />
+            <SiReact className="text-3xl md:text-6xl icon reactnative" />
           </div>
         </div>
-
-        {/* Projects Section */}
-        <div id="projects">
-      
-          <div>
-            <div className="mb-8 text-4xl font-bold text-center text-white">
-              <h2>My Projects</h2>
-            </div>
+        {/* PROJECTS */}
+        <div id="projects" className="py-10">
+          <div className="text-center">
+            <h2 className="mb-8 text-4xl font-bold">My Projects</h2>
             <HeroParallax products={productItems} />
           </div>
-
-
         </div>
-      </div>
-
-        <div className="container mx-auto text-center top-10">
-          <h2 className="mb-4 text-4xl font-bold text-white" id="contact">Contact</h2>
-          <div className="text-2xl text-white">
-            <p className="mb-5">Feel free to reach out to me via:</p>
-            <div className="flex justify-center space-x-6">
-              <a
-                href="https://www.linkedin.com/in/therajusah/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-3xl text-white"
-              >
-                <RiLinkedinFill />
-              </a>
-              <a
-                href="https://twitter.com/therajusah"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-3xl text-white"
-              >
-                <RiTwitterFill />
-              </a>
-              <a
-                href="https://www.facebook.com/therajusah"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-3xl text-white"
-              >
-                <RiFacebookFill />
-              </a>
-              <a
-                href="https://www.instagram.com/therajusah/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <RiInstagramFill size={24} />
-              </a>
-              <a href="https://www.github.com/therajusah" target="_blank" rel="noopener noreferrer">
-                <RiGithubFill size={24} />
-              </a>
-
-            </div>
-        </div>
+        {/* CONTACT */}
+        <Contact />
       </div>
     </div>
   );

@@ -2,8 +2,8 @@
   "compilerOptions": {
     "target": "ES6",
     "module": "ESNext",
-    "jsx": "react-jsx", // Use react-jsx for React 17+
-    "moduleResolution": "node", // Ensure node module resolution is used
+    "jsx": "react-jsx", 
+    "moduleResolution": "node", 
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,

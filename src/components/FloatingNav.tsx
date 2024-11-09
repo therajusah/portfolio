@@ -37,26 +37,29 @@ export const FloatingNav = ({
           exit={{ y: -100, opacity: 0 }}
           transition={{ duration: 0.2 }}
           className={cn(
-            "flex max-w-fit fixed top-6 inset-x-0 mx-auto border border-transparent border-gray-400 rounded-full bg-black text-white shadow-lg z-[5000] pr-2 pl-8 py-2 items-center justify-center space-x-4",
+            "flex max-w-fit fixed top-6 inset-x-0 mx-auto border border-transparent border-gray-400 rounded-full shadow-lg z-[5000] pr-2 pl-8 py-2 items-center justify-center space-x-4",
             className
           )}
+          style={{ backgroundColor: '#F5F5F4' }}
         >
           {navItems.map((navItem, idx) => (
             <a
               key={`link=${idx}`}
               href={navItem.link}
               className={cn(
-                "relative items-center flex space-x-1 text-white hover:text-blue-500"
+                "relative items-center flex space-x-1 hover:text-blue-500"
               )}
             >
               <span className="block sm:hidden">{navItem.icon}</span>
               <span className="hidden text-sm sm:block">{navItem.name}</span>
             </a>
           ))}
-          <button className="px-4 py-2 text-sm font-medium text-white border border-white rounded-full">
-            <span>Resume</span>
-            <span className="absolute inset-x-0 w-1/2 h-px mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent" />
-          </button>
+          <a href={"https://drive.google.com/file/d/1Oixi26ixbYfbUt_16g77BnLpe48YGGRw/view?usp=sharing"}>
+            <button className="px-4 py-2 text-sm font-medium rounded-full sm:text-center">
+              <span>Resume</span>
+              <span className="absolute inset-x-0 w-1/2 h-px mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent" />
+            </button>
+          </a>
         </motion.div>
       )}
     </AnimatePresence>

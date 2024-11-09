@@ -12,7 +12,36 @@ module.exports = {
   content: ["./src/**/*.{ts,tsx}"],
   darkMode: "class",
   theme: {
-    // rest of the code
+    extend: {
+      animation: {
+        glow: 'glow 5s ease-in-out infinite',
+        shimmer: "shimmer 2s linear infinite",
+      },
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'], 
+      },
+      animation: {
+        'fade-in': 'fadeIn 0.5s ease-in-out',
+      },
+      keyframes: {
+        glow: {
+          '0%, 100%': { transform: 'scale(1)', opacity: '0.6' },
+          '50%': { transform: 'scale(1.1)', opacity: '0.8' },
+        },
+        fadeIn: {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 1 },
+        },
+        shimmer: {
+          from: {
+            backgroundPosition: "0 0",
+          },
+          to: {
+            backgroundPosition: "-200% 0",
+          },
+        },
+      },
+    },
   },
   plugins: [
     addVariablesForColors,
