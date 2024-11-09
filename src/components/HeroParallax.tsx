@@ -139,7 +139,8 @@ export const ProductCard = ({
     >
       <a
         href={product.link}
-        className="block group-hover/product:shadow-2xl "
+        className="block group-hover/product:shadow-2xl"
+        target="_blank" 
       >
         <img
           src={product.thumbnail}

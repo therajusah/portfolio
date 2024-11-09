@@ -32,13 +32,13 @@ const Contact = () => {
       </div>
       <div className="flex space-x-4 z-10">
         <a href="https://github.com/therajusah" target="_blank" rel="noopener noreferrer">
-          <FaGithub className="text-3xl hover:text-gray-300" />
+          <FaGithub className="text-5xl hover:text-gray-300" />
         </a>
-        <a href="https://linkedin.com/therajusah" target="_blank" rel="noopener noreferrer">
-          <FaLinkedin className="text-3xl hover:text-gray-300" />
+        <a href="https://linkedin.com/in/therajusah" target="_blank" rel="noopener noreferrer">
+          <FaLinkedin className="text-5xl hover:text-gray-300" />
         </a>
         <a href="https://twitter.com/therajusah" target="_blank" rel="noopener noreferrer">
-          <FaTwitter className="text-3xl hover:text-gray-300" />
+          <FaTwitter className="text-5xl hover:text-gray-300" />
         </a>
       </div>
       {showToast && (
